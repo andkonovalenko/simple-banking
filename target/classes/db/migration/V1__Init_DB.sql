@@ -1,0 +1,32 @@
+-- create sequence hibernate_sequence start 1 increment 1;
+--
+-- create table transaction (
+--     transaction_id  bigserial not null,
+--     money_amount float4,
+--     date varchar(255) not null,
+--     operation_type varchar(255) not null,
+--     user_id int8,
+--     primary key (transaction_id)
+-- );
+--
+-- create table user_role (
+--     user_id bigserial not null,
+--     roles varchar(255)
+-- );
+--
+-- create table usr (
+--     user_id  bigserial not null,
+--     is_active boolean,
+--     balance float4,
+--     e_mail varchar(255) not null,
+--     password varchar(255) not null,
+--     primary key (user_id)
+-- );
+--
+-- alter table if exists transactions
+--     add constraint transactions_user_fk
+--     foreign key (user_id) references usr;
+--
+-- alter table if exists user_role
+--     add constraint user_role_user_fk
+--     foreign key (user_id) references usr;
