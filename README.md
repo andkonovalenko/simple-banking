@@ -16,6 +16,5 @@ API
   * `GET /user/<userId>`
   * `GET /balance/user/<userId>`
   * `GET /history/user/<userId>`
-  * `POST /balance/increase/user/<userId>`
-  * `POST /balance/decrease/user/<userId>`
-  * `POST /tokens/user/<userId>`
+  * `POST /balance/deposit/user/<userId>`
+  * `POST /balance/withdraw/user/<userId>`
